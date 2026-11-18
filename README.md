@@ -31,8 +31,8 @@ Participant sequencing data (BAM, gVCF, VCF) are **not** included in this reposi
 
 | Tool | Version used |
 |---|---|
-| GATK (HaplotypeCaller, CombineGVCFs, GenotypeGVCFs) | [x.x] |
-| bcftools / samtools / htslib (tabix) | [x.x] |
+| GATK (HaplotypeCaller, CombineGVCFs, GenotypeGVCFs) | v4.6.2.0 |
+| bcftools / samtools / htslib (tabix) | [1.23.1] |
 | WhatsHap | 2.8 |
 | Ensembl VEP (Docker `ensemblorg/ensembl-vep:release_115.1`) with the GRCh38 115 cache | 115.1 |
 | CADD precomputed scores (GRCh38): `whole_genome_SNVs.tsv.gz`, `gnomad.genomes.r4.0.indel.tsv.gz` | v1.7 |
@@ -121,20 +121,12 @@ treated as genotyping error.
 CADD v1.7 PHRED (≥ 10 highlighted), UCSC phyloP100way (≥ 1.0 = conserved). For indels, phyloP is the
 maximum over the reference bases spanned; indels absent from the CADD gnomAD indel file are reported as NA.
 
-## Expected results (manuscript values)
-
-| Locus | Result |
-|---|---|
-| *FGF10* TAD (chr5:43,600,000–44,825,000) | AD144–AD145 222/223; AD143–AD144 200/207; AD143–AD145 201/208; AD143–AD146 6/208 |
-| *FGFR2* TAD (chr10:120,925,001–121,925,000) | AD144/AD145/AD146 agree at 705/706 informative sites; AD143 differs from AD146 at all 317 discriminating non-damage sites; 62 variants absent from all affected relatives (8 with MAX_AF < 0.01) |
-| *TBX4* region (chr17:61,000,000–61,800,000) | AD143–AD146 87/90; AD144–AD146 94/110; AD145–AD146 0/110 |
-| *FGF10* hap A candidates | 30 (21 strict, 9 sensitivity) |
 
 ## Analyses performed outside this code
 
-- **AlphaGenome** variant prioritization (AlphaGenome Variant Impact score) — [web interface / API; version, date].
-- **FABIAN-variant** (2026) transcription-factor binding predictions — web interface.
-- **Hi-C** (IMR-90, GEO GSE63525) and ENCODE ChIP-seq tracks — visualized in [browser]; no processing code.
+- **AlphaGenome** variant prioritization (AlphaGenome Variant Impact score) — [(https://deepmind.google/science/alphagenome/)].
+- **FABIAN-variant** (2026) transcription-factor binding predictions — [web interface](https://fabianapp.org/variant26/).
+- **Hi-C** (IMR-90, GEO GSE63525) and ENCODE ChIP-seq tracks — visualized in [[browser](https://3dgenome.fsm.northwestern.edu/)]; no processing code.
 
 ## Reproducibility notes
 
