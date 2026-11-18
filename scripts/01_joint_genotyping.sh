@@ -24,6 +24,6 @@ for CHR in $CHROMS; do
 done
 
 ls "$W"/joint/family_chr*.joint.vcf.gz | sort -V > "$W/concat.list"
-bcftools concat -Oz -o "$OUT/family.joint_v2.vcf.gz" -f "$W/concat.list"
-bcftools index -t "$OUT/family.joint_v2.vcf.gz"
-bcftools stats "$OUT/family.joint_v2.vcf.gz" | grep -E "^SN\s+0\s+(number of samples|number of records|number of SNPs|number of indels)"
+bcftools concat -Oz -o "$OUT/family.joint_v3.vcf.gz" -f "$W/concat.list"
+bcftools index -t "$OUT/family.joint_v3.vcf.gz"
+bcftools stats "$OUT/family.joint_v3.vcf.gz" | grep -E "^SN\s+0\s+(number of samples|number of records|number of SNPs|number of indels)"
