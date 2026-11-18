@@ -55,7 +55,7 @@ scripts strip everything after the first underscore.
 
 | Step | Script | What it does | Main output (`results/`) |
 |---|---|---|---|
-| 01 | `01_joint_genotyping.sh` | CombineGVCFs + GenotypeGVCFs per chromosome for the 10 samples; `bcftools concat` | `family.joint_v2.vcf.gz` |
+| 01 | `01_joint_genotyping.sh` | CombineGVCFs + GenotypeGVCFs per chromosome for the 10 samples; `bcftools concat` | `family.joint_v3.vcf.gz` |
 | 02 | `02_coverage.sh` | Mean depth of the original vs resequenced AD143 libraries in target regions | `AD143_coverage.tsv` |
 | 03 | `03_whatshap_phasing.sh` | WhatsHap read-based + pedigree phasing of the three loci (`config/whatshap_regions.bed`) with the parents, AD144, AD145, AD146 (AD143 excluded) | `whatshap/` |
 | 04 | `04_paternal_alleles.sh` | Paternal allele of each child at informative sites in the three loci | `<LOCUS>_paternal_alleles.tsv` |
