@@ -1,0 +1,5 @@
+# Regions phased with WhatsHap (BED, 0-based start). The values below are the phase-block
+# boundaries reported in whatshap5_phase.log; replace with the exact input windows if they differ.
+chr5	43600000	44825000	FGF10_TAD
+chr10	121478331	121598458	FGFR2_gene_CHECK
+chr17	61201662	61485110	TBX4_superenhancer_to_gene_CHECK

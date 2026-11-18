@@ -1,0 +1,6 @@
+# BED (0-based start). Replace with the target_regions.bed used for Table 1.
+chr5	43599999	44825000	FGF10_TAD
+chr5	44385695	44386743	FGF10_enhancer
+chr5	44388710	44388770	FGF10_promoter
+chr10	121478331	121598458	FGFR2_gene_CHECK
+chr17	61201662	61384701	TBX4_super_enhancer_CHECK

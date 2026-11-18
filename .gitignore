@@ -1,0 +1,15 @@
+# Never commit participant data or large derived files
+results/*
+!results/.gitkeep
+*.bam
+*.bai
+*.cram
+*.vcf
+*.vcf.gz
+*.tbi
+*.g.vcf.gz
+*.bw
+*.xlsx
+*.pdf
+*.png
+__pycache__/

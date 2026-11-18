@@ -1,0 +1,11 @@
+# sample<TAB>gVCF path; {CHR} is replaced by the chromosome (per-chromosome gVCFs)
+AD137	/path/to/gvcfs/AD137/AD137.{CHR}.g.vcf.gz
+AD138	/path/to/gvcfs/AD138/AD138.{CHR}.g.vcf.gz
+AD139	/path/to/gvcfs/AD139/AD139.{CHR}.g.vcf.gz
+AD140	/path/to/gvcfs/AD140/AD140.{CHR}.g.vcf.gz
+AD141	/path/to/gvcfs/AD141/AD141.{CHR}.g.vcf.gz
+AD142	/path/to/gvcfs/AD142/AD142.{CHR}.g.vcf.gz
+AD143	/path/to/gvcfs_ad143_new/AD143.{CHR}.g.vcf.gz
+AD144	/path/to/gvcfs/AD144/AD144.{CHR}.g.vcf.gz
+AD145	/path/to/gvcfs/AD145/AD145.{CHR}.g.vcf.gz
+AD146	/path/to/gvcfs/AD146/AD146.{CHR}.g.vcf.gz
